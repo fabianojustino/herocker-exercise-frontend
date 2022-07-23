@@ -19,24 +19,24 @@ function App() {
   return (
     <table>
       <tr>
-        {Object.keys(data[0]).map(
-          (key) => (<th key={ Math.random() }>{key}</th>),
-        )}
+        { Object.keys(data[0]).map(
+          (key) => (<th key={ Math.random() }>{ key }</th>),
+        ) }
       </tr>
       <tbody>
-        {data.map((rowInfo) => (
+        { data.map((rowInfo) => (
           <tr key={ Math.random() }>
             {
               Object.values(rowInfo).map(
-                (cellInfo) => (<td key={ Math.random() }>{cellInfo}</td>),
+                (cellInfo) => (<td key={ Math.random() }>{ cellInfo }</td>),
               )
             }
           </tr>
-        ))}
+        )) }
       </tbody>
     </table>
   );
 }
 
-// comment here, testing
+// comment here, testing here
 export default App;
